@@ -1,0 +1,29 @@
+{
+    "name": "genius257/moodle-block_grade",
+    "description": "\"Moodle block plugin for displaying grade information to users\"",
+    "type": "moodle-block",
+    "require-dev": {
+        "moodle/moodle": "^4.3",
+        "phpunit/phpunit": "^10.5",
+        "squizlabs/php_codesniffer": "^3.8",
+        "phpstan/phpstan": "^1.10",
+        "phpmd/phpmd": "@stable"
+    },
+    "license": "GPL-3.0+",
+    "require": {
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "installer-name": "grade"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        },
+        "platform": {
+            "ext-zip": "8.1",
+            "ext-gd": "8.1",
+            "ext-intl": "8.1"
+        }
+    }
+}
