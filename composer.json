@@ -19,11 +19,6 @@
     "config": {
         "allow-plugins": {
             "composer/installers": true
-        },
-        "platform": {
-            "ext-zip": "8.1",
-            "ext-gd": "8.1",
-            "ext-intl": "8.1"
         }
     }
 }
