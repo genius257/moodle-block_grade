@@ -1,0 +1,14 @@
+{
+  "name": "moodle-block_grade",
+  "version": "1.0.0",
+  "description": "Moodle block plugin for displaying grade information to users",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "author": "Anders Pedersen",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "typescript": "^5.4.2"
+  }
+}
