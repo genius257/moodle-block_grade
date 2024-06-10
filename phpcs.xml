@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ruleset name="MoodleCore">
-    <rule ref="moodle">
-    </rule>
+    <!--<rule ref="moodle"></rule>-->
+    <rule ref="PSR12"></rule>
     <file>./</file>
     <exclude-pattern>*/vendor/*</exclude-pattern>
     <arg name="colors"/>
