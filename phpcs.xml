@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="MoodleCore">
+    <rule ref="moodle">
+    </rule>
+    <file>./</file>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <arg name="colors"/>
+    <arg value="s"/>
+</ruleset>
