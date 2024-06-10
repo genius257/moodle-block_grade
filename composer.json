@@ -21,6 +21,11 @@
         "allow-plugins": {
             "composer/installers": true,
             "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "platform": {
+            "ext-zip": "8.0",
+            "ext-gd": "8.0",
+            "ext-intl": "8.0"
         }
     }
 }
