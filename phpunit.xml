@@ -1,21 +1,18 @@
-<phpunit
-    bootstrap="vendor/autoload.php"
-    failOnRisky="true"
-    colors="true"
->
-    <testsuites>
-        <testsuite name="full test">
-            <directory suffix="Test.php">tests/</directory>
-        </testsuite>
-    </testsuites>
-    <filter>
-        <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">classes</directory>
-            <directory suffix=".php">cli</directory>
-            <directory suffix=".php">db</directory>
-            <file>lib.php</file>
-            <file>locallib.php</file>
-            <file>settings.php</file>
-        </whitelist>
-    </filter>
+<?xml version="1.0"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" bootstrap="vendor/autoload.php" failOnRisky="true" colors="true" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" cacheDirectory=".phpunit.cache">
+  <testsuites>
+    <testsuite name="full test">
+      <directory suffix="Test.php">tests/</directory>
+    </testsuite>
+  </testsuites>
+  <source>
+    <include>
+      <directory suffix=".php">classes</directory>
+      <directory suffix=".php">cli</directory>
+      <directory suffix=".php">db</directory>
+      <file>lib.php</file>
+      <file>locallib.php</file>
+      <file>settings.php</file>
+    </include>
+  </source>
 </phpunit>
