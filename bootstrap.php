@@ -24,7 +24,7 @@ $CFG->libdir    = __DIR__.'/vendor/moodle/moodle/lib';
 
 $CFG->dirroot = dirname($CFG->libdir);
 
-require_once($CFG->libdir .'/setuplib.php');        // Functions that MUST be loaded first
+require_once($CFG->libdir . '/setuplib.php');        // Functions that MUST be loaded first
 
 // Make sure there is some database table prefix.
 if (!isset($CFG->prefix)) {

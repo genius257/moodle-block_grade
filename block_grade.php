@@ -1,4 +1,5 @@
 <?php
+
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -21,14 +22,16 @@
  * @copyright 2024, Anders Pedersen
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class block_grade extends block_base {
+class block_grade extends block_base
+{
 
     /**
      * Initialises the block.
      *
      * @return void
      */
-    public function init() {
+    public function init()
+    {
         $this->title = get_string('pluginname', 'block_grade');
     }
 
@@ -60,7 +63,8 @@ class block_grade extends block_base {
      *
      * @return array of the pages where the block can be added.
      */
-    public function applicable_formats() {
+    public function applicable_formats()
+    {
         return [
             'admin' => false,
             'site-index' => true,
