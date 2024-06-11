@@ -3,7 +3,7 @@
     "description": "\"Moodle block plugin for displaying grade information to users\"",
     "type": "moodle-block",
     "require-dev": {
-        "moodle/moodle": "^4.3",
+        "moodle/moodle": "^4.4",
         "phpunit/phpunit": "^10.5",
         "squizlabs/php_codesniffer": "^3.8",
         "phpstan/phpstan": "^1.10",
@@ -23,9 +23,9 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
         "platform": {
-            "ext-zip": "8.0",
-            "ext-gd": "8.0",
-            "ext-intl": "8.0"
+            "ext-zip": "8.1",
+            "ext-gd": "8.1",
+            "ext-intl": "8.1"
         }
     }
 }

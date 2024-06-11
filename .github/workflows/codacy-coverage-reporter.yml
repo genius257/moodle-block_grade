@@ -11,14 +11,14 @@ jobs:
       - name: Composer (php-actions)
         uses: php-actions/composer@v6
         with:
-          php_version: "8.0"
+          php_version: "8.1"
           version: 2.x
       - name: PHPUnit (php-actions)
         uses: php-actions/phpunit@v4
         with:
           configuration: phpunit.xml
           version: "9.6"
-          php_version: "8.0"
+          php_version: "8.1"
           php_extensions: "pcov iconv mbstring curl openssl ctype zip zlib gd simplexml spl pcre dom xml xmlreader intl json hash fileinfo sodium"
           args: --coverage-clover phpunit-clover.xml
       - name: Run codacy-coverage-reporter

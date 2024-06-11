@@ -26,6 +26,6 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'block_grade';
 $plugin->version = 2024012700;
-$plugin->requires = 2023100900; // Moodle 4.3
+$plugin->requires = 2024042200; // Moodle 4.4
 $plugin->maturity = MATURITY_STABLE;
 $plugin->release = '1.0.0';
