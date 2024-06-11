@@ -19,7 +19,7 @@ jobs:
           configuration: phpunit.xml
           version: "10.5"
           php_version: "8.1"
-          php_extensions: "pcov iconv mbstring curl openssl ctype zip zlib gd simplexml SPL pcre dom xml xmlreader intl json hash fileinfo"
+          php_extensions: "pcov"
           args: --coverage-clover phpunit-clover.xml
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
