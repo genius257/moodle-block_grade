@@ -17,9 +17,9 @@ jobs:
         uses: php-actions/phpunit@v4
         with:
           configuration: phpunit.xml
-          version: "9.6"
+          version: "10.5"
           php_version: "8.1"
-          php_extensions: "pcov iconv mbstring curl openssl ctype zip zlib gd simplexml spl pcre dom xml xmlreader intl json hash fileinfo sodium"
+          php_extensions: "pcov iconv mbstring curl openssl ctype zip zlib gd simplexml SPL pcre dom xml xmlreader intl json hash fileinfo sodium"
           args: --coverage-clover phpunit-clover.xml
       - name: Run codacy-coverage-reporter
         uses: codacy/codacy-coverage-reporter-action@v1.3.0
